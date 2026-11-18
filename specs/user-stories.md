@@ -2,61 +2,52 @@
 
 Format : **En tant que** [rôle], **je veux** [action], **afin de** [bénéfice].
 
----
+Les stories sont organisées par **rôle**. Celles qui reposent sur une capacité du moteur de recommandation l'indiquent entre crochets (voir [Capacités du moteur](#capacités-du-moteur)).
 
-## Première version : Banque d'idées
+## Capacités du moteur
 
-### Collaborateur
+Trois capacités transverses, partagées par plusieurs rôles :
+
+- **Capacité A – Matching et classement** : associer à chaque personne un ensemble de compétences et proposer les meilleurs profils pour les compétences demandées, selon un critère quantitatif (nombre et niveau des compétences couvertes) ou qualitatif (adéquation au besoin).
+- **Capacité B – Compréhension du langage naturel** : traduire une phrase libre, qui ne contient pas forcément les bons mots-clés, en compétences. Quand la traduction n'est que partielle, demander des précisions en s'appuyant sur ce qui a été compris.
+- **Capacité C – Typologie de référent** : identifier, selon le contexte, le type de référent adapté.
+  - *Expert* : expertise pointue sur un sujet (beaucoup de compétences précises pour un sujet étroit).
+  - *Référent transverse* : connaissance d'ensemble (compétences plus larges pour un sujet plus vaste), par exemple un chef d'équipe ou un référent métier.
+
+## Collaborateur
 
 - **C1 – Profil** : je veux construire mon profil en décrivant mes compétences en langage naturel, ou en important mon CV ou mon profil LinkedIn, afin de ne pas avoir à tout saisir manuellement.
 - **C2 – Visibilité** : je veux choisir qui peut voir mes compétences (mes collègues, mon manager, tout le Groupe), afin de rester maître de mes données tout en gagnant en visibilité.
 - **C3 – Suggestions** : je veux recevoir des suggestions de postes correspondant à mon profil, afin de découvrir des opportunités de mobilité.
 - **C4 – Candidature** : je veux consulter les offres internes et y candidater directement, afin de simplifier ma mobilité interne.
+- **C5 – Fraîcheur** : je veux que le référentiel de compétences reflète les arrivées, les départs et les mobilités internes, afin qu'il reste fiable dans le temps.
 
-### Manager
+## Manager (dont responsable de projet)
 
 - **M1 – Synthèse équipe** : je veux voir la synthèse des compétences de mon équipe, afin d'identifier ses forces et ses lacunes.
-- **M2 – Recherche** : je veux rechercher des profils par compétence, dans mon équipe comme dans le reste du Groupe, afin de trouver rapidement la bonne expertise.
-- **M3 – Besoin en langage naturel** : je veux décrire un besoin avec mes propres mots et obtenir les profils ou équipes les plus pertinents, avec l'explication de leur pertinence, afin de choisir en confiance.
+- **M2 – Recherche** : je veux rechercher des profils par compétence, dans mon équipe comme dans le reste du Groupe, afin de trouver rapidement la bonne expertise, y compris pour constituer l'équipe d'un nouveau projet. [Capacité A]
+- **M3 – Besoin en langage naturel** : je veux décrire un besoin avec mes propres mots et obtenir les profils ou équipes les plus pertinents, avec l'explication de leur pertinence, afin de choisir en confiance. [Capacité B]
 - **M4 – Pilotage** : je veux m'appuyer sur ces données pour répartir la charge de travail et piloter le développement des compétences de mon équipe, afin d'anticiper les besoins de formation.
+- **M5 – Classement** : je veux que les profils trouvés soient classés selon la quantité et la qualité des compétences demandées, afin de voir en premier les personnes les plus adaptées à mon projet. [Capacité A]
 
-### RH
+## RH (dont chargé de recrutement)
 
 - **R1 – Vue globale** : je veux disposer d'une vue globale des compétences de l'ensemble des collaborateurs, afin de piloter la stratégie de compétences de l'entreprise.
 - **R2 – Écarts** : je veux identifier les compétences insuffisamment représentées dans l'effectif, afin de proposer des formations internes ou d'engager des recrutements externes.
+- **R3 – Recrutement** : je veux croiser le besoin d'un projet avec le référentiel interne avant d'ouvrir un recrutement, afin de repérer les personnes déjà présentes qui ont les compétences et de privilégier la mobilité interne. [Capacités A, B]
 
----
+## Équipe de première ligne (support client ou interne, accueil, hotline, guichet)
 
-## Exemples d'utilisateurs
+- **F1 – Orientation** : je veux saisir une demande telle que je l'ai reçue, même sans savoir la traduire en vocabulaire métier, et obtenir les compétences associées ainsi que la personne ou le service qui peut la traiter, afin de réduire les allers-retours quand le problème est mal identifié. [Capacité B]
+- **F2 – Clarification** : je veux que, lorsque ma demande n'est comprise que partiellement, l'outil me pose des questions en s'appuyant sur ce qu'il a déjà compris, afin d'affiner le besoin sans repartir de zéro. [Capacité B]
 
-- **User 1 : Responsable de projet / Chargé de recrutement** :
-  - En tant que responsable d'un **nouveau projet à la recherche de compétences**, ou comme chargé de recrutement associé à ce projet, j'ai parfois du mal à reconnaître les personnes avec les bonnes compétences parmi **la multitude de personnes** en interne à l'entreprise.
-    </br>
-  - Je veux disposer d'un **référentiel** qui serait à jour sur les compétences des personnes **au sein de l'entreprise** (et qui continuerait à l'être avec les mouvements internes et/ou externes).
-    </br>
-  - Skill-Relay me permet, en plus de bénficier d'un référentiel de compétence qui se vaut exhaustif, de disposer d'une ou plusieurs personnes les plus priviligéiés dans cette recherche, **grâce à sa connaissance de chaque compétences des collaborateurs**.
+## Équipe de communication (interne et externe)
 
-_Première compétence : Associer à chaque personne d'une base de données un certain nombre de compétence, et proposer les meilleurs personnes selon les compétences données (quantitativement ou qualitativement)_
+- **K1 – Porte-parole** : je veux identifier, pour un sujet d'actualité (article, enregistrement audio ou vidéo, conférence, table ronde), le collaborateur le plus pertinent, afin de représenter au mieux l'expertise de l'entreprise. [Capacités A, B]
+- **K2 – Expert ou vulgarisateur** : je veux que l'outil distingue, selon le sujet, le besoin d'un expert pointu de celui d'un référent aux connaissances transverses (chef d'équipe, référent métier), afin de choisir entre une parole technique et une explication accessible au plus grand nombre. [Capacité C]
 
-</br>
+## Points à trancher
 
-- **User 2 : Équipe de première ligne (support client/interne, bureau d'accueil, etc.)** :
-  - En tant que collaborateur **assignée à une hotline ou à un guichet**, il se peut qu'une demande spécifique ne soit pas résoluble en direct, à cause d'un manque de connaissance sur le sujet ou parce que **le problème n'est pas de mon ressort**.
-    </br>
-  - Je souhaite être en capacité de **rediriger les personnes** vers les bons **services** ou les bons **responsables**, tout en réduisant les va-et-vient pour trouver la responsabilité du problème (parce que le problème serait mal-identifié).
-    </br>
-  - Skill-Relay m'aide à identifier tout autant la personne qui pourrait résoudre le problème que les compétences associées à la requête, même si je ne suis pas en capacité de traduire sa demande.
-    </br>
-
-_Deuxième compétence : traduire une phrase en langage naturelle qui ne possède pas forcément les bons mots clés en compétences. Si la traduction n'est pas possible pleinement, réussir à demander plus d'information en étayant la compréhension partielle que Skill-Relay a extrait._
-
-</br>
-
-- **User 3 : Équipe de communication interne/externe** :
-  - En tant que **chargé de communication**, je peux être ammener à réaliser des articles, ainsi que des enregistrements audios ou vidéos sur certains sujets d'actualité. Je peux aussi être l'interlocuteur pour participer à des conférences ou des tables rondes, et ainsi être le premier contact de l'entreprise
-    </br>
-  - Je souhaiterai alors identifier au mieux un collaborateur interne qui serait **une référence dans son domaine**, afin de représenter au mieux **l'expertise de l'entreprise**, ou à l'opposé, de **vulgariser un sujet technique** en une histoire accessible au plus grand nombre.
-    </br>
-  - Skill-Relay fait ainsi correspondre un questionnement particulier et formulé en un sujet d'actualité avec un ensemble de compétence, et sait **différencier le besoin d'une expertise ou d'une connaissance globale** en fonction du sujet pour me proposer une personne technique ou un agrégateur de connaissance (un chef d'équipe ou un référent métier).
-
-_Troisième compétence : identifier selon le contexte ce qu'on appelerait "référent" : expertise parfaite sur un sujet (liste de compétences (-) précises --> sujet + précis) ou connaissances transverses (liste de compétences + précises --> sujet (-) précis)._
+- **Visibilité (C2) et rôles opérationnels** : si un collaborateur restreint la visibilité de ses compétences, la première ligne et la communication ne le verront pas. Quel comportement par défaut pour ces rôles ?
+- **Périmètre du démonstrateur** : la mobilité (C3, C4) et la formation (M4, R2) relèvent moins du cœur « trouver le bon expert ». Faut-il les marquer hors du premier périmètre ?
+- **Redirection vers un service (F1)** : le référentiel couvre-t-il les services et responsables, ou seulement les personnes ?
